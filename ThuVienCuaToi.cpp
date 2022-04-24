@@ -267,11 +267,11 @@ void nhapBenhNhan(BenhNhan &bn)
         setNgay(bn.ngaySinh);
         setThang(bn.ngaySinh);
         setNam(bn.ngaySinh);
-        if (!laNgayHopLe(getNgay(bn.ngaySinh), getThang(bn.ngaySinh), getNam(bn.ngaySinh)))
+        if (!laNgayHopLe(getNgay(bn.ngaySinh), getThang(bn.ngaySinh), getNam(bn.ngaySinh)) || bn.ngaySinh.nam<1900)
         {
             printf("Ngay nhap vao khong hop le vui long nhap lai !!!\n");
         }
-    } while (!laNgayHopLe(getNgay(bn.ngaySinh), getThang(bn.ngaySinh), getNam(bn.ngaySinh)));
+    } while (!laNgayHopLe(getNgay(bn.ngaySinh), getThang(bn.ngaySinh), getNam(bn.ngaySinh)) || bn.ngaySinh.nam<1900);
 
     do
     {
@@ -362,11 +362,11 @@ void nhapBenhNhan(BenhNhan &bn)
         setNgay(bn.ngayNhapVien);
         setThang(bn.ngayNhapVien);
         setNam(bn.ngayNhapVien);
-        if (!laNgayHopLe(getNgay(bn.ngayNhapVien), getThang(bn.ngayNhapVien), getNam(bn.ngayNhapVien)))
+        if (!laNgayHopLe(getNgay(bn.ngayNhapVien), getThang(bn.ngayNhapVien), getNam(bn.ngayNhapVien)) || bn.ngayNhapVien.nam<1900)
         {
             printf("Ngay nhap vao khong hop le vui long nhap lai !!!\n");
         }
-    } while (!laNgayHopLe(getNgay(bn.ngayNhapVien), getThang(bn.ngayNhapVien), getNam(bn.ngayNhapVien)));
+    } while (!laNgayHopLe(getNgay(bn.ngayNhapVien), getThang(bn.ngayNhapVien), getNam(bn.ngayNhapVien)) || bn.ngayNhapVien.nam<1900);
 
     do
     {
@@ -399,11 +399,11 @@ void nhapBenhNhan(BenhNhan &bn)
         setNgay(bn.mui_1.ngayTiem);
         setThang(bn.mui_1.ngayTiem);
         setNam(bn.mui_1.ngayTiem);
-        if (!laNgayHopLe(getNgay(bn.mui_1.ngayTiem), getThang(bn.mui_1.ngayTiem), getNam(bn.mui_1.ngayTiem)))
+        if (!laNgayHopLe(getNgay(bn.mui_1.ngayTiem), getThang(bn.mui_1.ngayTiem), getNam(bn.mui_1.ngayTiem)) || bn.mui_1.ngayTiem.nam<1900)
         {
             printf("Ngay khong hop le vui long nhap lai !!!\n");
         }
-    } while (!laNgayHopLe(getNgay(bn.mui_1.ngayTiem), getThang(bn.mui_1.ngayTiem), getNam(bn.mui_1.ngayTiem)));
+    } while (!laNgayHopLe(getNgay(bn.mui_1.ngayTiem), getThang(bn.mui_1.ngayTiem), getNam(bn.mui_1.ngayTiem)) || bn.ngayTiem.nam<1900);
 
     printf("\t- Mui 2\n");
     do
